@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import Card from "../components/Card";
-import axios from "axios";
 
 const Home = () => {
-  
   const [items, setItems] = useState([]);
   useEffect(() => {
     const apiUrl = "https://6703a869ab8a8f8927311299.mockapi.io/items";
@@ -16,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="py-[40px] px-[65px]">
-      <b className="text-[36px] leading-[49px]">Все пиццы</b>
+      <b className="font-extrabold text-[36px] leading-[49px]">Все пиццы</b>
       <div className="flex justify-between items-center mt-[20px]">
         <Categories />
         <Sort />
@@ -31,4 +30,3 @@ const Home = () => {
 };
 
 export default Home;
-

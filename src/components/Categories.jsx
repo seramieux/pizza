@@ -1,6 +1,6 @@
-import React from "react";
+import { useState } from "react";
 const Categories = () => {
-  const [selected, setSelected] = React.useState(0);
+  const [selected, setSelected] = useState(0);
   const list = [
     "Все",
     "Мясные",
